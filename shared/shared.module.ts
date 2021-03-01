@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SelectComponent } from './select/select.component';
-
-
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -12,7 +11,8 @@ import { SelectComponent } from './select/select.component';
     SelectComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgbDropdownModule
   ]
 })
 export class SharedModule { }
