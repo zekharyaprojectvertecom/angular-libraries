@@ -1,8 +1,9 @@
 <div ngbDropdown>
-    <button class="form-control d-flex justify-content-between align-items-center" ngbDropdownToggle type="button" [disabled]="disabled" (blur)="onDropdownBlur()">
+    <button class="form-control d-flex justify-content-between align-items-center" ngbDropdownToggle type="button"
+        [disabled]="disabled" (blur)="onDropdownBlur()">
         {{selectedLabel || placeholder}}
     </button>
-    <div *ngIf="options" ngbDropdownMenu>
+    <div *ngIf="options" ngbDropdownMenu class=" w-100 mt-0">
         <button *ngFor="let option of options" ngbDropdownItem (click)="itemClicked(option)" type="button">
             {{option.label}}
         </button>
